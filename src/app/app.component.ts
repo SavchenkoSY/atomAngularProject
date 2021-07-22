@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'country-app';
+  //greeting = 'Good Evening';
+
+  greeting(timeOfDay: any){
+    return `Good ${timeOfDay}`;
+  }
+
+  constructor(){};
 }
