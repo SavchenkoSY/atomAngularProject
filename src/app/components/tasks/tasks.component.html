@@ -1,0 +1,11 @@
+<div class="tasks-container mt-5">
+    <div class="tasks" *ngFor ="let task of tasks" >
+    <div>
+        <div class="status"></div>
+    </div>
+    <div class="title">{{task.title}}</div>
+    <div class="difficulty">{{task.priority}}</div>
+    <div class="assigned">assigned to: <b>{{task.assignee}}</b></div>
+    <div class="runtime"><b>{{task.estimathion}} </b>hrs</div>
+    </div> 
+</div>

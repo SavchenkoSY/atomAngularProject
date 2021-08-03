@@ -3,14 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RedsquareComponent } from './components/redsquare/redsquare.component';
-import { BluecircleComponent } from './components/bluecircle/bluecircle.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RedsquareComponent,
-    BluecircleComponent
+    TasksComponent,
   ],
   imports: [
     BrowserModule,
