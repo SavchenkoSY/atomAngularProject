@@ -44,5 +44,7 @@ export class TasksComponent{
     return this.tasks.sort((a) => a.status ? 1 : -1);
   }
    
-  
+  deleteTasks(task: Task){
+    this.tasks = this.tasks.filter(el => el !== task);
+  }
 }

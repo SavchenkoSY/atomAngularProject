@@ -7,6 +7,8 @@
     <div class="difficulty">{{task.priority}}</div>
     <div class="assigned">assigned to: <b>{{task.assignee}}</b></div>
     <div class="runtime"><b>{{task.estimathion}} </b>hrs</div>
-    <div><b>—</b></div>
+    <div>
+        <button class= "btn btn-sm btn-dander" (click)="deleteTasks(task)"> — </button>
+    </div>
     </div> 
 </div>
