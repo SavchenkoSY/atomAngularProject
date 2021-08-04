@@ -4,7 +4,7 @@ export interface Task{
     title: string;
     priority: TaskPriority;
     assignee: string;
-    done: boolean;
+    status: boolean;
     estimathion: number;
     description: string;
     tags: string[];

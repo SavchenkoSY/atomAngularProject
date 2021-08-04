@@ -11,33 +11,38 @@ export class TasksComponent{
   
   tasks: Task[]=[
     {
-      title: 'Сделать домашнее задание',
+      title: 'Сделать дз',
       priority: TaskPriority.HIGHT,
       assignee: 'Me',
-      done: false,
+      status: false,
       estimathion: 3,
       description: 'Написать и скинуть "Y"',
       tags: ['front-ed']
     },
     {
-      title: 'Сделать домашнее задание',
+      title: 'Сделать',
       priority: TaskPriority.HIGHT,
-      assignee: 'Me',
-      done: false,
-      estimathion: 3,
+      assignee: 'Not me',
+      status: true,
+      estimathion: 5,
       description: 'Написать и скинуть "Y"',
       tags: ['front-ed']
     },
     {
-      title: 'Сделать домашнее задание',
+      title: 'Покормить собаку',
       priority: TaskPriority.HIGHT,
-      assignee: 'Me',
-      done: false,
-      estimathion: 3,
+      assignee: 'Parents',
+      status: false,
+      estimathion: 1,
       description: 'Написать и скинуть "Y"',
-      tags: ['front-ed']
+      tags: ['Быт']
     }
   ];
-  constructor() { }
+  constructor() {}
+
+  sortTasks(){
+    return this.tasks.sort((a) => a.status ? 1 : -1);
+  }
+   
   
 }
